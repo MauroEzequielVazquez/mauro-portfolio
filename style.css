@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+   background: linear-gradient(135deg, #0f172a, #1e293b);
+   min-height: 100vh;
     margin: 0;
     color: #333;
 }
@@ -12,18 +13,37 @@ body {
     text-align: center;
 }
 
+
+
+.hero {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.hero h2 {
+    color: #93c5fd;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+}
+
 h1 {
-    color: #0066cc;
     margin-bottom: 5px;
 }
 
 h2 {
-    color: #555;
     margin-bottom: 25px;
 }
 
 h3 {
-    color: #0066cc;
+    color:  #274c77;
 }
 
 p {
@@ -31,14 +51,30 @@ p {
     line-height: 1.6;
 }
 
-.info {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+.perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+     transition: all 0.3s ease;
 }
 
+.perfil:hover {
+    transform: scale(1.03);
+}
+
+
+
+.contenedor {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -48,10 +84,51 @@ ul {
     padding: 0;
 }
 
+
 li {
-    background-color: white;
+    background: #274c77;
+    color: white;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: 25px;
     min-width: 120px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+
+.info {
+    background: white;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    border-top: 4px solid #274c77;
+}
+
+.info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.20);
+}
+
+a {
+    color:  #274c77;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+    margin-top: 40px;
+    text-align: center;
 }
