@@ -37,13 +37,13 @@ git clone https://github.com/MauroEzequielVazquez/mauro-portfolio.git
 Ubicarse en la carpeta del proyecto y ejecutar:
 
 ```bash
-docker build -t portfolio-mauro .
+docker build -t Portfolio-Personal .
 ```
 
 ## Ejecutar el contenedor
 
 ```bash
-docker run -d -p 8080:80 --name portfolio portfolio-mauro
+docker run -d -p 8080:80 --name portfolio Porfolio-Personal
 ```
 
 ## Acceder a la aplicación
