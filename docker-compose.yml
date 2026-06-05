@@ -1,0 +1,6 @@
+services:
+  portfolio:
+    image: portfolio-mauro
+    container_name: portfolio
+    ports:
+      - "8080:80"

@@ -4,7 +4,7 @@
 # Portfolio Personal
 >>>>>>> c9fa6b4 (Actualizado nombre del proyecto)
 
-## Trabajo Práctico N°1 - Git y Docker
+ Trabajo Práctico N°1 - Git y Docker
 
 Este proyecto fue desarrollado como parte del Trabajo Práctico N°1 de la materia, con el objetivo de aplicar conceptos de control de versiones mediante Git y GitHub, y la utilización de contenedores Docker.
 
@@ -29,7 +29,7 @@ Para ejecutar el proyecto es necesario tener instalado:
 ## Clonar el repositorio
 
 ```bash
-git clone https://github.com/MauroEzequielVazquez/mauro-portfolio.git
+git clone https://github.com/MauroEzequielVazquez/Portfolio-Personal.git
 ```
 
 ## Construir la imagen Docker
@@ -37,13 +37,21 @@ git clone https://github.com/MauroEzequielVazquez/mauro-portfolio.git
 Ubicarse en la carpeta del proyecto y ejecutar:
 
 ```bash
-docker build -t Portfolio-Personal .
+docker build -t portfolio-mauro .
 ```
 
 ## Ejecutar el contenedor
 
 ```bash
-docker run -d -p 8080:80 --name portfolio Porfolio-Personal
+docker run -d -p 8080:80 --name portfolio portfolio-mauro
+```
+
+## Ejecución mediante Docker Compose
+
+También es posible ejecutar la aplicación utilizando Docker Compose:
+
+```bash
+docker compose up -d
 ```
 
 ## Acceder a la aplicación
@@ -53,6 +61,11 @@ Abrir el navegador e ingresar a:
 ```text
 http://localhost:8080
 ```
+
+## Funcionalidades adicionales
+
+- Implementación de Docker Compose para simplificar la ejecución del contenedor.
+- Archivo .gitignore para excluir archivos innecesarios del repositorio.
 
 ## Autor
 
