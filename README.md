@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #  Portfolio
+=======
+# Portfolio Personal
+>>>>>>> c9fa6b4 (Actualizado nombre del proyecto)
 
 ## Trabajo Práctico N°1 - Git y Docker
 
