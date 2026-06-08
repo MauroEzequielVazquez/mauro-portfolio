@@ -1,5 +1,6 @@
 services:
   portfolio:
+    build: .
     image: portfolio-mauro
     container_name: portfolio
     ports:
